@@ -47,11 +47,9 @@ export function deleteUser(req: Request, res: Response, next: NextFunction) {
     res.status(404)
     //return;
   }
- // else{
     UsersService.deleteUser(userIndex);
     res.status(201).json("User deleted ...");
-  //}
-  
+ 
 }
 
 export default {
